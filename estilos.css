@@ -1,5 +1,13 @@
-button{
-    background-color: rgb(250, 147, 233);
-    border-color: black;
-    color: rgb(109, 0, 0);
+ion-col {
+    background-color: #e6bde7;
+    border: solid 1px #000000;
+    color: #000000;
+    text-align: center;
+}
+
+.grid {
+    background-color: #000000;
+    border: none;
+    color: #eeff00;
+    text-align: center;
 }
