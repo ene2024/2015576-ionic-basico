@@ -1,13 +1,17 @@
-ion-col {
-    background-color: #e6bde7;
-    border: solid 1px #000000;
-    color: #000000;
-    text-align: center;
+.titulo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.grid {
-    background-color: #000000;
-    border: none;
-    color: #eeff00;
-    text-align: center;
+.carrito {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+ion-input {
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 76, 181);
+    border-radius: 4px;
 }
