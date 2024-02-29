@@ -3,33 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica 4</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <title>Practica 3</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1 class="titulo">Practica 4</h1>
+    <h1>Practica 3</h1>
+    <hr><br>
+    <div>
+        <label>Usuario: </label>
+        <input type="text" id="usuario">
+        <label>Contraseña: </label>
+        <input type="text" id="contra">
+    </div>
     <br>
-    <h2 class="carrito">Carrito de Compras</h2>
-
-    <section id="datos">
-        <ion-input label="Articulo" id="art"></ion-input>
-        <br>
-        <ion-input label="Precio" id="precio"></ion-input>
-        <br>
-        <ion-button onclick="agregar()" shape="round" color="warning">Agregar</ion-button>
-    </section>
-
-    <section id="ticket">
-        <br>
-        <h2>Ticket de Compras</h2>
-    </section>
-    <br>
-<!--<ion-button onclick="dinero()" shape="round" color="danger">Calcular total</ion-button>
--->
-
+    <button onclick="Login()">Iniciar Sesión</button>
+    <button onclick="Registro()">Registrar</button>
 </body>
-<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
 <script src="script.js"></script>
 </html>

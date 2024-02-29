@@ -1,17 +1,5 @@
-.titulo {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.carrito {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-body {
-    background-color: bisque;
-}
-
-ion-input {
-    box-sizing: border-box;
-    border: 2px solid rgb(255, 76, 181);
-    border-radius: 4px;
+button{
+    background-color: rgb(63, 134, 175);
+    border-color: black;
+    color: rgb(219, 219, 219);
 }
