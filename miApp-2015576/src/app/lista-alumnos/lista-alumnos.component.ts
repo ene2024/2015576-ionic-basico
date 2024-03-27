@@ -6,7 +6,7 @@ import { ActionSheetController } from '@ionic/angular';
   styleUrls: ['./lista-alumnos.component.scss'],
 })
 export class ListaAlumnosComponent  implements OnInit {
-  alumnos : any = ["Carlos", "Ximena", "Alberto", "Eduardo", "Barbara", "Georgina", "Kevin"];
+  alumnos : any = ["Barbara", "Leon", "Jeffrey", "Michelle", "Tom", "Ana", "Sabrina"];
   constructor(private actionSheetCtrl: ActionSheetController) { }
 
   ngOnInit() {}
@@ -15,20 +15,36 @@ export class ListaAlumnosComponent  implements OnInit {
       header: 'Actions',
       buttons: [
         {
-          text: 'Delete',
+          text: 'Eliminar',
           role: 'destructive',
           data: {
             action: 'delete',
           },
         },
         {
-          text: 'Share',
+          text: 'Cancelar',
+          role: 'cancel',
           data: {
-            action: 'share',
+            action: 'cancel',
+          },
+        },
+      ],
+    });
+
+    await actionSheet.present();
+  }
+  async fav() {
+    const actionSheet = await this.actionSheetCtrl.create({
+      header: 'Actions',
+      buttons: [
+        {
+          text: 'Añadir a favoritos',
+          data: {
+            action: 'favorito',
           },
         },
         {
-          text: 'Cancel',
+          text: 'Cancelar',
           role: 'cancel',
           data: {
             action: 'cancel',
