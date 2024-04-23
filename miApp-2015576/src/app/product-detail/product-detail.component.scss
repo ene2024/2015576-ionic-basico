@@ -1,0 +1,18 @@
+ion-card {
+    --background: black;
+}
+
+ion-card-title {
+    --color: white;
+}
+
+h3, h2, p, * {
+    color: white;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background: black;
+    margin: 10px 0;
+}

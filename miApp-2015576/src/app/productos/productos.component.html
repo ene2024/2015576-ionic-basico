@@ -1,3 +1,9 @@
-<p>
-  productos works!
-</p>
+<router-outlet></router-outlet>
+
+<h2>Lista productos</h2>
+<ion-card *ngFor="let producto of productos">
+    <ion-card-title>{{producto.title}}</ion-card-title>
+    <ion-card-content>
+      <a [routerLink]="['/productDetail', producto.id]">Ir a Detalle</a>
+    </ion-card-content>
+</ion-card>
