@@ -1,13 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { ActionSheetController } from '@ionic/angular';
+import { alumno } from '../models/alumno.model';
 @Component({
   selector: 'app-lista-alumnos',
   templateUrl: './lista-alumnos.component.html',
   styleUrls: ['./lista-alumnos.component.scss'],
 })
 export class ListaAlumnosComponent  implements OnInit {
-  alumnos : any = ["Barbara", "Leon", "Jeffrey", "Michelle", "Tom", "Ana", "Sabrina"];
+  //alumnos : any = ["Barbara", "Leon", "Jeffrey", "Michelle", "Tom", "Ana", "Sabrina"];
+  alumnos : alumno[] = [
+  ];
   constructor(private actionSheetCtrl: ActionSheetController) { }
+  alumno : alumno = {
+    nombre: '',
+    presente: false
+  }
 
   ngOnInit() {}
   async eliminar() {
@@ -54,5 +61,20 @@ export class ListaAlumnosComponent  implements OnInit {
     });
 
     await actionSheet.present();
+  }
+
+  result: string = ''
+  nuevoAlumno: alumno = {
+    nombre: '',
+    presente: false
+  }
+
+  agregaAlumno(): void {
+    this.alumnos.push(this.nuevoAlumno);
+
+    this.nuevoAlumno = {
+      nombre: '',
+      presente: false
+    }
   }
 }

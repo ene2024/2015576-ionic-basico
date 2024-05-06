@@ -6,11 +6,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 const routes: Routes = [
   {
     path: '',
-    component: ProductosComponent
-  },
-  {
-    path: 'productDetail/:id',
-    component: ProductDetailComponent
+    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
   }
 ];
 @NgModule({

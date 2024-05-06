@@ -7,13 +7,12 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListaAlumnosComponent } from './lista-alumnos/lista-alumnos.component';
-import { ProductosComponent } from './productos/productos.component';
 import {HttpClientModule} from '@angular/common/http';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
-  declarations: [AppComponent, ListaAlumnosComponent, ProductosComponent, ProductDetailComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
+  declarations: [AppComponent, ListaAlumnosComponent],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, FormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
